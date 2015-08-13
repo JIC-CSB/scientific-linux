@@ -1,0 +1,7 @@
+---
+
+- name: base install of scientific software and libraries
+  hosts: centos7
+  
+  roles:
+    - editors
