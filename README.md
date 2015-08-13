@@ -14,3 +14,11 @@ vagrant up
 cd provisioning
 ansible-playbook -i hosts base.yml
 ```
+
+## Base scientific system includes
+
+### Text editors
+
+- nano
+- vim
+- emacs
