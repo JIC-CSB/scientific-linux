@@ -4,4 +4,6 @@
   hosts: centos7
   
   roles:
+    - epel
     - editors
+    - development_tools

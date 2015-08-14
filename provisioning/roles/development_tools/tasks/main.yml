@@ -1,0 +1,18 @@
+---
+
+- name: install development tools
+  yum: name="@Development tools"
+       state=present
+
+- name: install development libraries
+  yum: name={{ item }}
+       state=present
+  with_items:
+    - atlas-devel
+    - lapack-devel
+    - blas-devel
+    - gsl-devel
+    - python-devel
+    - libpng-devel
+    - freetype-devel
+    - freeimage
