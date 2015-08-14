@@ -22,3 +22,32 @@ ansible-playbook -i hosts base.yml
 - nano
 - vim
 - emacs
+
+### Languages
+
+- Development tools (gcc, g++, gfortran, make, automake, git, ...)
+- Python
+- Perl
+- Ruby
+- Java
+- R
+
+### Default Python packages
+
+- pip
+- virtualenv
+- numpy
+- scipy
+- matplotlib
+- ipython
+
+### Development libraries
+
+- atlas
+- lapack
+- blas
+- gsl
+- libpng
+- zlib
+- freetype
+- freeimage
