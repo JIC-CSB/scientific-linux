@@ -14,5 +14,6 @@
     - gsl-devel
     - python-devel
     - libpng-devel
+    - zlib-devel
     - freetype-devel
     - freeimage
