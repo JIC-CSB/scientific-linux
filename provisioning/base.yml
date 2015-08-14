@@ -7,3 +7,7 @@
     - epel
     - editors
     - development_tools
+    - python
+    - ruby
+    - java
+    - r

@@ -1,0 +1,5 @@
+---
+
+- name: install R
+  yum: name=R
+       state=present

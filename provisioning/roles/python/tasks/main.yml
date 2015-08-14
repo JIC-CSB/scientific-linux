@@ -1,0 +1,17 @@
+---
+
+- name: install python development tools
+  yum: name={{ item }}
+       state=present
+  with_items:
+    - python-pip
+    - python-virtualenv
+
+- name: install scientific python packages
+  yum: name={{ item }}
+       state=present
+  with_items:
+    - numpy
+    - scipy
+    - python-matplotlib
+    - python-ipython
