@@ -1,0 +1,23 @@
+---
+
+- name: base install of scientific software and libraries
+  hosts: all
+  
+  tasks:
+    - name: update all packages
+      yum: name=* state=latest
+    
+  roles:
+    - epel
+    - editors
+    - development_tools
+    - python
+    - ruby
+    - java
+    - r
+
+- name: install a desktop on top of the base system
+  hosts: desktops
+  
+  roles:
+    - desktop
