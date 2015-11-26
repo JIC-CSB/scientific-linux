@@ -1,0 +1,22 @@
+---
+
+- name: install the gnome desktop
+  yum: name="@^GNOME Desktop"
+       state=present
+
+- name: get current default runlevel
+  command: systemctl get-default
+  register: runlevel
+
+- name: set graphical.target runlevel
+  command: systemctl set-default graphical.target
+  when: runlevel.stdout != "graphical.target"
+
+- name: is graphical.target currently active
+  command: systemctl is-active graphical.target
+  register: graphical
+  ignore_errors: yes
+
+- name: switch to graphical runlevel
+  command: systemctl isolate graphical.target
+  when: graphical.stdout != "active"
