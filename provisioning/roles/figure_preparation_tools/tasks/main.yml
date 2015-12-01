@@ -1,0 +1,11 @@
+---
+
+- name: install software for generating figures
+  yum: name={{ item }}
+       state=present
+  with_items:
+    - gnuplot
+    - ImageMagick
+    - ImageMagick-devel
+    - graphviz
+    - graphviz-devel

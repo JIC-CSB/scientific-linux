@@ -15,6 +15,7 @@
     - ruby
     - java
     - r
+    - figure_preparation_tools
 
 - name: install a desktop on top of the base system
   hosts: desktops
