@@ -16,4 +16,5 @@
     - libpng-devel
     - zlib-devel
     - freetype-devel
+    - ncurses-devel
     - freeimage
