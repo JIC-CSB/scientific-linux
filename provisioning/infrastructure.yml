@@ -10,6 +10,7 @@
   roles:
     - epel
     - editors
+    - terminal_tools
     - development_tools
     - python
     - ruby

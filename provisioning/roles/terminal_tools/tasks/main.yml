@@ -1,0 +1,10 @@
+---
+
+- name: install terminal tools
+  yum: name={{ item }}
+       state=present
+  with_items:
+    - screen
+    - tmux
+    - lynx
+    - elinks
