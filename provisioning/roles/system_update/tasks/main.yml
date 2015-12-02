@@ -1,0 +1,5 @@
+---
+# This playbook updates the installed packages.
+
+- name: update the installed packages
+  yum: name=* state=latest
