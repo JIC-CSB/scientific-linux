@@ -1,0 +1,11 @@
+---
+
+- name: install gui software
+  yum: name={{ item }}
+       state=present
+  with_items:
+    - lyx
+    - geany
+    - git-gui
+    - elinks
+    - filezilla
