@@ -18,3 +18,8 @@
     - freetype-devel
     - ncurses-devel
     - freeimage
+
+- name: install debugging tools
+  yum: name={{ item }}
+  with_items:
+    - valgrind
